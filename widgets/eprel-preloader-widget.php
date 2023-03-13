@@ -54,11 +54,11 @@ class EPREL_Effective_widgets extends Widget_Base {
 			[
 				'label' => esc_html__( 'Choose Type', 'effective-pre-loader' ),
 				'type' => Controls_Manager::SELECT,
-				'default' => 'Image',
+				'default' => 'TextContent',
 				'options' => [
+					'TextContent'  => esc_html__( 'Text Content', 'effective-pre-loader' ),
 					'Image'  => esc_html__( 'Image', 'effective-pre-loader' ),
 					'Icon'  => esc_html__( 'Icon', 'effective-pre-loader' ),					
-					'TextContent'  => esc_html__( 'Text Content', 'effective-pre-loader' ),
 					'PreDefined'  => esc_html__( 'Predefined', 'effective-pre-loader' ),
 					'Lottie'  => esc_html__( 'Lottie', 'effective-pre-loader' ),
 					'CustomCode'  => esc_html__( 'Custom Code', 'effective-pre-loader' ),
@@ -171,7 +171,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 			[
 				'label' => esc_html__( 'Text', 'effective-pre-loader' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Process…', 'effective-pre-loader' ),
+				'default' => esc_html__( 'LOADING', 'effective-pre-loader' ),
 				'placeholder' => esc_html__( 'Type your loading text', 'effective-pre-loader' ),
 				'condition' => [
 					'plcSelect' => 'TextContent',
@@ -341,7 +341,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 				'type' => Controls_Manager::REPEATER,
 				'default' => [
 					[
-						'plcSelect' => 'Image',                       
+						'plcSelect' => 'TextContent',                       
 					],
 				],                
 				'fields' => $repeater->get_controls(),
@@ -351,7 +351,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$this->add_control(
 			'backpreloader',
 			[
-				'label' => esc_html__( 'PreLoad Visibility', 'effective-pre-loader' ),
+				'label' => esc_html__( 'PreLoad Visibility??', 'effective-pre-loader' ),
 				'type' => Controls_Manager::SWITCHER,
 				'label_on' => esc_html__( 'Enable', 'effective-pre-loader' ),
 				'label_off' => esc_html__( 'Disable', 'effective-pre-loader' ),
@@ -1692,7 +1692,6 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$postLoadSlideInDir=!empty($settings["postLoadSlideInDir"]) ? $settings["postLoadSlideInDir"] : 'left';
 		$postLoad4InDir=!empty($settings["postLoad4InDir"]) ? $settings["postLoad4InDir"] : 'left';
 
-		
 		$preloaderSrc=$slideinclass=$slideoutclass=$slideinclasseclass='';
 		
 		if(!empty($pageLoadTransition) && $pageLoadTransition=='pageloadslidein' && !empty($pageLoadSlideInDir)){

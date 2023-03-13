@@ -57,13 +57,13 @@ class Classepreleffective {
 
 	//css-js-link-here
 	public function eprel_all_assets_for_the_public(){
-		wp_enqueue_style( 'eprel-effective-sdffestyle', plugin_dir_url( __FILE__ ) . 'assets/public/css/plus-pre-loader.css', null, '1.0', 'all' );
-		wp_enqueue_style( 'eprel-effective-sdstyle', plugin_dir_url( __FILE__ ) . 'assets/public/css/plus-pre-loader.min.css', null, '1.0', 'all' );
+		wp_enqueue_style( 'eprel-effective-sdffestyle', plugin_dir_url( __FILE__ ) . 'assets/public/css/eprel-loader.css', null, '1.0', 'all' );
+		wp_enqueue_style( 'eprel-effective-sdstyle', plugin_dir_url( __FILE__ ) . 'assets/public/css/eprel-loader.min.css', null, '1.0', 'all' );
 
-		wp_enqueue_script( 'eprel-effective-rpreloader', plugin_dir_url( __FILE__ ) . 'assets/public/js/plus-pre-loader-extra-transition.js', array('jquery'), '1.0', true );
-		wp_enqueue_script( 'eprel-effective-emin-preloader', plugin_dir_url( __FILE__ ) . 'assets/public/js/plus-pre-loader-extra-transition.min.js', array('jquery'), '1.0', true );
-		wp_enqueue_script( 'eprel-effective-wpreloaderwww', plugin_dir_url( __FILE__ ) . 'assets/public/js/plus-pre-loader.js', array('jquery'), '1.0', true );
-		wp_enqueue_script( 'eprel-effective-qmin-preloaderqqqq', plugin_dir_url( __FILE__ ) . 'assets/public/js/plus-pre-loader.min.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'eprel-effective-rpreloader', plugin_dir_url( __FILE__ ) . 'assets/public/js/eprel-loader-extra-transition.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'eprel-effective-emin-preloader', plugin_dir_url( __FILE__ ) . 'assets/public/js/eprel-loader-extra-transition.min.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'eprel-effective-wpreloaderwww', plugin_dir_url( __FILE__ ) . 'assets/public/js/eprel-loader.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'eprel-effective-qmin-preloaderqqqq', plugin_dir_url( __FILE__ ) . 'assets/public/js/eprel-loader.min.js', array('jquery'), '1.0', true );
 	}
 
 	//admin-icon
