@@ -169,9 +169,9 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$repeater->add_control(
 			'plcsText',
 			[
-				'label' => esc_html__( 'Text', 'effective-pre-loader' ),
+				'label' => esc_html__( 'Load Text', 'effective-pre-loader' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'LOADING', 'effective-pre-loader' ),
+				'default' => esc_html__( 'Loading...', 'effective-pre-loader' ),
 				'placeholder' => esc_html__( 'Type your loading text', 'effective-pre-loader' ),
 				'condition' => [
 					'plcSelect' => 'TextContent',

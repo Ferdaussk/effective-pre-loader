@@ -1946,7 +1946,7 @@ body:not(.elementor-editor-active).eprel-loaded #eprel-loader-wrapper.eprel-prel
 }
 .eprel-loader-wrapper .eprel-text-loader {
   display: inline-block;
-  color: #fff;
+  color: #000000;
   position: relative;
   overflow: hidden;
   text-align: left;
