@@ -45,7 +45,7 @@ class Classepreleffective {
 	}
 
 	// Register Category
-	function eprel_add_elementor_widget_categories( $elements_manager ) {
+	function eprel_add_elementor_widget_categories($elements_manager){
 		$elements_manager->add_category(
 			'bwdthebest_general_category',
 			[

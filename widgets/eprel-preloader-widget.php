@@ -661,7 +661,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$this->start_controls_section(
 			'pr_image_styling',
 			[
-				'label' => esc_html__('Image', 'effective-pre-loader'),
+				'label' => esc_html__('Image Style', 'effective-pre-loader'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -813,7 +813,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$this->start_controls_section(
 			'pr_icon_styling',
 			[
-				'label' => esc_html__('Icon', 'effective-pre-loader'),
+				'label' => esc_html__('Icon Style', 'effective-pre-loader'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -910,7 +910,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$this->start_controls_section(
 			'pr_text_styling',
 			[
-				'label' => esc_html__('Text', 'effective-pre-loader'),
+				'label' => esc_html__('Text Style', 'effective-pre-loader'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1574,7 +1574,7 @@ class EPREL_Effective_widgets extends Widget_Base {
 		$this->start_controls_section(
 			'pr_box_styling',
 			[
-				'label' => esc_html__('Box', 'effective-pre-loader'),
+				'label' => esc_html__('Box Style', 'effective-pre-loader'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1818,7 +1818,6 @@ class EPREL_Effective_widgets extends Widget_Base {
 						}else{
 							$preloaderSrc .='<div class="eprel-preloader-animated-text"><span>'.esc_html($item['plcsText']).'</span></div>';
 						}
-						
 					}
 					//predefine animation
 					if($plcSelect=='PreDefined' && !empty($item['plcsPreAnimation'])){

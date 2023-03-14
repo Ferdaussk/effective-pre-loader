@@ -1974,7 +1974,7 @@ body:not(.elementor-editor-active).eprel-loaded #eprel-loader-wrapper.eprel-prel
   position: relative;
 }
 .eprel-preloader-wrap.plcper3 span.eprel-perc-prepostfix {
-  color: #fff;
+  color: #d80b0b;
 }
 .eprel-preloader-wrap.plcper3 span.eprel-perc-prepostfix.eprel-perc-pre {
   margin-right: 10px;
